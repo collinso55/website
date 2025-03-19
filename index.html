@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tcollins-shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Seed Woc frontend market</div>
+    </div>
+    <div class="sidebar">
+    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <a href="/" >Home</a>
+    <a href="#about" class=>Products</a>
+    <a href="#services">Categories</a>
+    <a href="/">About us</a>
+    <a href="/">Cart🛒</a>
+    <button class="btn">login</button>
+    </div>
+        <div class="navlinks">
+        <a href="/" class="link">Home</a>
+        <a href="#about" class="link">Products</a>
+        <a href="#services" class="link">Categories</a>
+        <a href="/" class="link">About us</a>
+        <a href="/" class="link">Cart🛒</a>
+        <button class="btn">login</button>
+       <li class="menubutt" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#070772"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </div>
+    </nav>
+    <!-- <div class="navlinks">
+        <a href="/" class="link">HOME</a>
+        <a href="#about" class="link">About us</a>
+        <a href="#services" class="link">Services</a>
+        <a href="/" class="link">Items we sell</a>
+        <a href="/" class="link">Reviews</a>
+        <a href="/" class="link">Contact us</a>
+        <a href="/" class="link cv">Shop now</a>
+    </div> -->
+<div class="page">
+    <div class="search">
+        <input type="text" placeholder="search product....">
+        <span>🔍</span>
+    </div>  
+<div class="product">
+    <div class="card">
+        <div class="picture">
+            <img src="./assets/images/basketball-5k-3840x2160-17343.jpg" alt="">
+        </div>
+        <p class="Pname">Basketball</p>
+        <p class="dec">Good basketball for sport</p>
+        <span>⭐⭐⭐⭐</span>
+        <button class="btn">Buy now</button>
+    </div>
+    <div class="card">
+        <div class="picture">
+            <img src="./assets/images/eiffel-tower-dreamy-5120x3857-18776.jpeg" alt="">
+        </div>
+        <p class="Pname">Eiffel tower</p>
+        <p class="dec">Found in paris</p>
+        <span>⭐⭐⭐⭐</span>
+        <button class="btn">Buy now</button>
+    </div>
+    <div class="card">
+        <div class="picture">
+            <img src="./assets/images/frog-house-5120x2880-19676.jpg" alt="">
+        </div>
+        <p class="Pname">Frog-house</p>
+        <p class="dec">Good side view</p>
+        <span>⭐⭐⭐⭐</span>
+        <button class="btn">Buy now</button>
+    </div>
+    <div class="card">
+        <div class="picture">
+            <img src="./assets/images/i-love-coding-dark-3840x2160-16016.png" alt="">
+        </div>
+        <p class="Pname">Coding</p>
+        <p class="dec">Inspirational quote</p>
+        <span>⭐⭐⭐⭐</span>
+        <button class="btn">Buy now</button>
+    </div>
+    <div class="card">
+        <div class="picture">
+            <img src="./assets/images/lamborghini-5120x2880-19504.jpg" alt="">
+        </div>
+        <p class="Pname">Lamborghini</p>
+        <p class="dec">Very expensive car</p>
+        <span>⭐⭐⭐⭐</span>
+        <button class="btn">Buy now</button>
+    </div>
+    <div class="card">
+        <div class="picture">
+            <img src="./assets/images/san-francisco-3840x2160-17249.jpg" alt="">
+        </div>
+        <p class="Pname">San-francisco</p>
+        <p class="dec">Good for vacation</p>
+        <span>⭐⭐⭐⭐</span>
+        <button class="btn">Buy now</button>
+    </div>
+</div>
+</div>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+<div class="footer">
+    <div class="aboutus">
+        <h1>About us</h1>
+        <h2>Seed woc frontend market offers the best tech products at competitive prces. Quality is our priority</h2>
+        <h3>123-450-789</h3>
+        <a href="">info@seedwoc.com</a>
+        <div class="icons">
+        <button><img src="./assets/icons/facebook.png" alt=""></button>
+        <button><img src="./assets/icons/dribbble.png" alt=""></button>
+        <button><img src="./assets/icons/instagram.png" alt=""></button>
+        <button><img src="./assets/icons/linkedin.png" alt=""></button>
+        </div>
+    </div>
+    <div class="quick">
+        <h1>Quick links</h1>
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Categories</a></li>
+        <li><a href="">Deals</a></li>
+        <li><a href="">Support</a></li>
+    </div>
+    <div class="news">
+        <h1>NewsLetter</h1>
+        <h2>subscripe to get products on our new products and latest items</h2>
+        <input type="text" placeholder="Enter your email">
+        <button><span><a href="">Subscribe</a></span></button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+}
+:root{
+    --bg-color: #f5f0f0;
+    --primary-color:#070772;
+}
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+}
+.page{
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    flex-direction: column;
+    align-items: center;
+}
+.page .search{
+    display: flex;
+    gap: 6px;
+    background-color: #fffdfd;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+.page .search input{
+    border: none;
+    outline: none;
+    padding: 12px 44px;
+    font-size: 23px;
+    background-color: #fffdfd;
+    font-size: 23px;
+    width: 100%;
+}
+.search span{
+    padding: 12px;
+    font-size: 18px;
+}
+.page .product{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+}
+.product .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fffdfd;
+    /* width: 400px; */
+    padding: 12px;
+    transition: 0.4s all ease-in;
+    cursor: pointer;
+    height: 100%;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.2);
+}
+.product .card:hover{
+    transform: translateY(-8px);
+}
+.product .card .picture{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Pname{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.desc{
+    margin-bottom: 12px;
+}
+
+.btn{
+    padding: 12px 23px;
+    cursor: pointer;
+    margin-top: 4px;
+    background-color: rgb(43, 43, 238);
+    transition: 0.3s ease-in-out;
+}
+.navbar{
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 1;
+    right: 1;
+    width: 90%;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    z-index: 1000;
+    flex-wrap: nowrap;
+}
+.navlinks{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navlinks li{
+    display: inline;
+}
+.navlinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.3s;
+    box-sizing: border-box;
+}
+.navbar .btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.link:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: var(--primary-color);
+}
+.link:active{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: var(--primary-color);
+}
+.btn:hover{
+    background-color: rgb(78, 78, 224);
+}
+.navbar .btn:hover{
+    background-color: rgb(41, 41, 219);
+}
+.navbar .logo{
+    color: var(--primary-color);
+    font-size: 20px;
+    padding-left: 20px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(73, 44, 44);
+    color: #000000;
+    gap: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a{
+    width: 100%;
+}
+.sidebar li{
+    width: 100%;
+}
+.navlinks .menubutt{
+    display: none;
+}
+/* .navlinks .link{
+    color: rgb(35, 35, 201);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navlinks{
+    margin-top: 30px;
+    align-content: center;
+} */
+@media (max-width:1080px){
+    body{
+        background-color: red;
+    }
+    .product{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+    .product .card{
+        margin-bottom: 12px;
+    }
+    .product .card .Pname{
+        color: red;
+    }
+}
+@media (max-width:580px){
+    body{
+        background-color: red;
+    }
+    .product{
+        grid-template-columns: 1fr;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .navlinks .menubutt{
+        display: block;
+    }
+}
+.footer{
+    display: flex;
+    background-color: var(--primary-color);
+    color: white;
+    height: 190px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    padding: 20px;
+    gap: 30px;
+    list-style: none;
+}
+.footer .aboutus{
+    flex: 1;
+    gap: 30pxpx;
+}
+.aboutus .icons{
+    display: flex;
+    padding-top: 15px;
+    padding-left: 5px;
+    gap: 3px;
+    background-color: var(--primary-color);
+    object-fit: fill;
+    border: none;
+    outline: none;
+}
+.footer .aboutus button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+.aboutus h1{
+    font-size: 20px;
+}
+.aboutus h2{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutus a{
+    color: white;
+    margin-top: 5px;
+    text-decoration: none;
+    padding-left: 5px;
+}
+.aboutus h3{
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+.footer .quick{
+    flex: 1;
+}  
+.footer .quick a{
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+}
+.quick h1{
+    font-size: 20px;
+}
+.footer .quick li{
+    margin-top: 10px;
+    line-height: 20px;
+}
+.footer .news{
+    flex: 1;
+}
+.footer .quick a{
+    flex-direction: column;
+}
+.news h1{
+    font-size: 20px;
+}
+.news h2{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.news input{
+    height: 25px;
+    border-radius: 3px;
+    width: 275px;
+    margin-right: 5px;
+    border: none;
+    padding: 3px;
+    font-size: 13px;
+    padding-left: 5px;
+    margin-top: 15px;
+    outline: none;
+}
+.news a{
+    text-decoration: none;
+    color: white;
+}
+.news button{
+    background-color: var(--primary-color);
+    color: black;
+    height: 25px;
+    width: 70px;
+    border: none;
+    outline: none;
+    transition: 0.3s all ease-in-out;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 13px;
+}
+.news button:hover{
+    background-color: #3434db;
+}
