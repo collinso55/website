@@ -125,6 +125,9 @@ body{
     transition: color 0.3s;
     box-sizing: border-box;
 }
+ .navlinks a:active{
+    color: var(--primary-color);
+}
 .navbar .btn{
     background-color: var(--primary-color);
     color: white;
@@ -183,7 +186,7 @@ body{
     width: 100%;
 }
 .navlinks .menubutt{
-    display: none;
+    display: flex;
 }
 /* .navlinks .link{
     color: rgb(35, 35, 201);
@@ -331,4 +334,101 @@ body{
 }
 .news button:hover{
     background-color: #3434db;
+}
+.ahd h1{
+    margin-top: 100px;
+    height: 40px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(70, 183, 228);
+    text-align: center;
+    color: white;
+    font-size: 30pxpx;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.top{
+    margin-top: 7px;
+    display: flex;
+    gap: 7px;
+}
+.top .aright{
+    /* text-align: center; */
+}
+.top .aleft{
+    text-align: center;
+}
+.top .aright .hero h1{
+    text-align: center;
+}
+.top .aright .hero h2{
+    font-size: 15px;
+    padding: 5px;
+}
+.top .aright .hero{
+    padding-top: 30px;
+    background-color: #dfa3df;
+    height: 150px;
+    width: 500px;
+    color: white;
+}
+.top .aright .bar h1{
+    text-align: center;
+}
+.top .aright .bar h2{
+    font-size: 15px;
+    padding: 5px;
+}
+.top .aright .bar{
+    padding-top: 30px;
+    background-color: #28d318;
+    height: 220px;
+    width: 500px;
+    margin-top: 7px;
+    color: white;
+}
+.top .aleft .main{
+    padding-top: 30px;
+    background-color: #e0e009;
+    height: 300px;
+    width: 723px;
+    color: white;
+}
+.top .aleft .extra{
+    padding-top: 30px;
+    background-color: #504c4c;
+    height: 70px;
+    width: 723px;
+    margin-top: 7px;
+    color: white;
+}
+.mid{
+    display: flex;
+    gap: 7px;
+    margin-top: 7px;
+}
+.mid .rel{
+    padding-top: 30px;
+    text-align: center;
+    background-color: #045304;
+    width: 916px;
+    height: 70px;
+    color: white;
+}
+.mid .repo{
+    padding-top: 30px;
+    text-align: center;
+    background-color: #dfa3df;
+    width: 416px;
+    height: 70px;
+    margin-bottom: 7px;
+    color: white;
+}
+.lst{
+    text-align: center;
+    padding-top: 30px;
+    background-color: #c98c08;
+    height: 40px;
+    margin-bottom: 7px;
+    color: white;
 }
